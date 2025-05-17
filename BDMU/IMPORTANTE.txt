@@ -1,0 +1,14 @@
+Este es un trabajo que realice en "solitario" (sin ninguna ayuda) para una empresa
+que tenia cerca de 2000 empleados para gestionar las carpetas y unidades de red a la que los usuarios tenían permisos.
+
+Está hecho en access, para luego realizar los permisos mencionados, se importa a un xml con un botón que hay en access, y luego con un script
+en powershell, se ejecutaba cada vez que un usuario iniciaba sesión, el script buscaba que usuario era y que permisos de carpetas y unidades de red tenía,
+estos permisos dados podrían ser por el grupo al que pertenecía, o alguno aparte para él.
+Una vez visto que permisos tenía ejecutaba un comando de shell para dar los permisos.
+
+IMPORTANTE:
+Para que funcione correctamente tienes que habilitar el centro de confianza en la ruta de la carpeta principal, llamada bdmu y sus subcarpetas.
+También tendrás que vincular las tablas de nuevo por que se quedará la ruta anterior ya que la vinculación se hace con la propia opción de access,
+simplemente eliminamos la vinculación y luego volvemos a vincular (IMPORTANTE HACERLO EN ESTE ORDEN).
+Ahora mismo solo hay dos datos de usuario, uno que es el mío con la contraseña modificada, y otro de prueba, ya que hay datos sensibles por lo cual he decidido eliminar los usuarios.
+
